@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Proyectos</h1>
+</div>
+
+<div class="card-columns">
+  <div *ngFor="let project of projects" [routerLink]="['/proyecto', project._id]" id="card-content" class="card" style="width: 18rem;">
+    <img src="{{'get-image/'+project.image }}" *ngIf="project.image" class="card-img-top" alt="Imagen del Proyecto">
+    <div class="card-body">
+      <h5 class="card-title">{{project.name}}</h5>
+      <p class="card-text">Año de Publicación{{project.year}}</p>
+      <!--a href="#" class="btn btn-primary">Go somewhere</a-->
+    </div>
+  </div>
+</div>

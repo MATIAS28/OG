@@ -1,0 +1,33 @@
+<header class="navbar navbar-expand-lg navbar-dark bg-dark" id="header">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a [routerLink]="['/sobre-mi']" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/proyectos']">Proyectos</a>
+      </li>
+
+      <a class="navbar-brand" id="logo" href="#">MZ</a>
+      
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/crear-proyecto']">Crear Proyecto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+
+<footer>
+  <h3>Master en JS</h3>
+</footer>

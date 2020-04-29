@@ -1,0 +1,233 @@
+/*Fuentes*/
+@font-face {
+  font-family: "HK";
+  src: url("./fonts/HK.woff2");
+}
+
+
+/*Generales*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  /*Cargar Fuentes*/
+  font-size: 20px;
+  background: url("./img/B3.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+
+/*Header*/
+#header{
+  top: 0px;
+  position: sticky;
+  width: 100% !important;
+  background: transparent !important;
+  transition: all 600ms;
+}
+
+#header:hover{
+  background: #253036 !important;
+}
+
+#navbarNav{
+  flex-grow: 0;
+  margin: 0px auto;
+  width: 450px !important;
+}
+
+
+
+/*LOG0*/
+
+#logo{
+  font-size: 30px !important;
+  transition: color 500ms, transform 500ms !important;
+  padding: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 16px;
+}
+
+#logo a{
+  transition: color 500ms, transform 500ms !important;
+}
+
+#logo:hover{
+  color: black;
+  background: transparent;
+  transform: scale(1.50, 1.50);
+}
+
+
+/*Contenedor principal*/
+#content{
+  min-height: 800px;
+  width: 75%;
+  margin: 0px auto;
+  box-shadow: 0px 0px 40px black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+/*Sobre mi*/
+#title{
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+#title h1{
+  font-family: "HK";
+  font-size: 60px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+
+#title h2{
+  font-size: 30px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.about h2{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+}
+
+.about p{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: justify;
+}
+
+article.about{
+  width: 85%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/*Crear Project Container*/
+.container{
+  padding: 30px;
+}
+
+.container label{
+  font-family: "HK";
+}
+
+.container h1{
+  font-size: 30px;
+    font-family: "HK";
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+}
+
+.form-error{
+  display: block;
+  width: 150px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: white;
+  background: #691313;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+/**/
+.message{
+  margin-bottom: 30px;
+  width: 40%;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0px 0px 8px black;
+}
+
+.success{
+  background: #1e292f;
+}
+
+.success a{
+  color: white;
+  text-decoration: underline;
+}
+
+.failed{
+  background: #691313;
+}
+
+
+/*Targeta de Proyectos*/
+#card-content{
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+#card-content:hover{
+  box-shadow: 0px 0px 5px black;
+  transform: translateY(-10px);
+}
+
+
+/*Página de Proyecto*/
+.img-proyecto{
+  display: block;
+  max-width: 50%;
+  margin: 0px auto;
+  border-radius: 4px;
+}
+
+.data{
+  margin: 0px auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.but-proyecto a{
+  margin-right: 10px;
+}
+
+/*Confirm*/
+.confirm-alert{
+  background: #dc3545;
+  color: white;
+  padding: 0px;
+  width: 400px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/*Pie de pagina*/
+footer{
+  margin: 0px auto;
+  margin-top: 30px;
+  width: 75%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  transition: all 600ms;
+}
+
+
+
+footer:hover{
+  background: black;
+  box-shadow: 0px 0px 5px black;
+}
